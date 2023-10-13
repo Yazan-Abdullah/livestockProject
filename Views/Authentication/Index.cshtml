@@ -1,0 +1,61 @@
+﻿@model livestockProject.Models.SystemUser
+
+@{
+    ViewData["Title"] = "Login Page";
+}
+<div id="errorMessage"></div>
+<div class="login-container" style="width: 300px; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0px 0px 10px 0px #000;">
+    <h2 style="text-align: center;">Login</h2>
+    <form id="loginForm" asp-action="Login" method="post">
+        <div class="input-group" style="margin: 10px 0;">
+            <label for="Username" style="display: block;">Username</label>
+            <input type="text" id="Username" name="Username" style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px;" required>
+        </div>
+        <div class="input-group" style="margin: 10px 0;">
+            <label for="password" style="display: block;">Password</label>
+            <input type="password" id="password" name="password" style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px;" required>
+        </div>
+        <div class="input-group" style="margin: 10px 0;">
+            <button type="submit" style="width: 100%; padding: 10px; background-color: #007BFF; color: #fff; border: none; border-radius: 3px; cursor: pointer;">Login</button>
+        </div>
+    </form>
+</div>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#loginForm").submit(function (event) {
+            event.preventDefault();
+
+            var formData = {
+                Username: $("#Username").val(),
+                password: $("#password").val()
+            };
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Login", "Authentication")',
+                data: formData,
+                success: function (response) {
+                    if (response.redirect) {
+                        // If login is successful, redirect to the specified URL
+                        window.location.href = response.redirect;
+                    } else {
+                        // If login fails, display an error message
+                        $("#errorMessage").html(response.errorMessage);
+                    }
+                },
+                error: function (error) {
+                    console.error(error);
+                }
+            });
+        });
+    });
+</script>
+
