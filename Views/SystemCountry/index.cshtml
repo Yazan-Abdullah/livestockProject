@@ -1,0 +1,87 @@
+﻿@model List<livestockProject.Data.Countries>
+@{
+    ViewData["Title"] = @LocalizationManager.GetString("Country Page");
+}
+
+
+                <section class="section main-section">
+                    <div class="card has-table">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                @LocalizationManager.GetString("Countries")
+                                
+                            </p>
+                            <a class="green-btn" asp-area="" asp-controller="SystemCountry" asp-action="AddCountry">                               
+                                @LocalizationManager.GetString("Add Country")
+                            </a>
+                        </header>
+                        <div class="card-content">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>@LocalizationManager.GetString("ID")</th>
+                                        <th>@LocalizationManager.GetString("NameArabic")</th>
+                                        <th>@LocalizationManager.GetString("Action")</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var country in Model)
+                                    {
+                                        <tr>
+                                            <td>@country.Id</td>
+                                            <td>@country.NameArabic</td>
+                                            <td>
+                                                <a id="delete" class="button small red --jb-modal" data-id="@country.Id">
+                                                    <span class="icon"><i class="mdi mdi-trash-can"></i></span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <div class="table-pagination">
+                                <div class="flex items-center justify-between">
+                                    <div class="buttons">
+                                        <button type="button" class="button active">1</button>
+                                        <button type="button" class="button">2</button>
+                                        <button type="button" class="button">3</button>
+                                    </div>
+                                    <small>Page 1 of 3</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Add a click event handler to the delete icons
+            $("#delete").click(function () {
+                var id = $(this).data("id");
+
+                // Send an AJAX request to delete the record
+                $.ajax({
+                    type: "POST",
+                    url: "/SystemCountry/DeleteCountry",
+                    data: { Id: id },
+                    success: function (result) {
+                        if (result.status === "success") {
+                            window.location.href = "@Url.Action("Index", "SystemCountry")";
+                            $(this).closest("tr").remove();
+                        } else {
+                            alert("Error: " + result.message);
+                        }
+                    },
+                    error: function () {
+                        alert("An error occurred while processing your request.");
+                    }
+                });
+            });
+        });
+    </script>
+
+ 
+
+

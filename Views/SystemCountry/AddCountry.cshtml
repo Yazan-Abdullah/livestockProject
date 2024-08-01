@@ -1,0 +1,114 @@
+﻿@model livestockProject.Models.SystemCountry
+
+@{
+    ViewData["Title"] = @LocalizationManager.GetString("Add Country");
+}
+
+                <section class="section main-section">
+                    <div class="card has-table">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                @LocalizationManager.GetString("Country") 
+                            </p>
+                            <a href="#" class="card-header-icon" onclick="reloadPage()>
+                                <span class="icon"><i class="mdi mdi-reload"></i></span>
+                            </a>
+                        </header>
+
+                        <div class="container">
+                            <form id="createcountryform">
+                                <div class="row">
+                                    <!-- First Row -->
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="NameArabic">@LocalizationManager.GetString("Name Arabic")</label>
+                                            <input type="text" class="form-control" name="NameArabic" id="NameArabic" required />
+                                        </div>
+                                    </div>
+                                 </div>
+                                 <br />
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-success">@LocalizationManager.GetString("Add Country")</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <a asp-area="" class="btn btn-primary" asp-controller="SystemCountry" asp-action="Index">
+                                                <span class="menu-item-label">@LocalizationManager.GetString("Back To List")</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function reloadPage() {
+        window.location.reload(); // Reload the page
+    }
+</script>
+    <script>
+        $(document).ready(function () {
+            $('#createcountryform').on('submit', function (e) {
+                e.preventDefault();
+
+                var NameArabic = $("#NameArabic").val();
+                console.log("test")
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("CreateCountry", "SystemCountry")",
+                    data: { NameArabic: NameArabic }, // Send only the NameArabic variable
+                    success: function (response) {
+                        if (response.status === "success") {
+                            window.location.href = "@Url.Action("Index", "SystemCountry")"; // Redirect on success
+                        } else {
+                            alert(response.message || "Error creating user. Please try again.");
+                        }
+                    },
+                    error: function () {
+                        alert("An error occurred. Please try again.");
+                    }
+                });
+            });
+        });
+
+    </script>
+
+
+    <script type="text/javascript" src="js/main.min.js?v=1628755089081"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script type="text/javascript" src="js/chart.sample.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '658339141622648');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img b-4ina8mlikz height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=658339141622648&ev=PageView&noscript=1" /></noscript>
+
+    <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+
+
+    <!-- Visual Studio Browser Link -->
+    <script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="ef9b64c3753242cf9ad90658ff7b7ce7" data-requestMappingFromServer="false" data-connectUrl="http://localhost:63875/f503be01b10641b3ab5cd8d6d408a761/browserLink"></script>
+    <!-- End Browser Link -->
+
+    <script src="/_framework/aspnetcore-browser-refresh.js"></script>

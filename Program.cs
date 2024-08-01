@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 //{
 //    options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection"));
 //});
-builder.Services.AddDbContext<livestockContext>(options =>
+builder.Services.AddDbContext<ModelContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });

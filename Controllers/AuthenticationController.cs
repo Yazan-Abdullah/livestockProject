@@ -1,72 +1,84 @@
-﻿using livestockProject.DTO;
+﻿using livestockProject.DAL;
+using livestockProject.DTO;
 using livestockProject.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Oracle.ManagedDataAccess.Client;
+using System.Data;
+using System.Text.Json;
+using System.Text.RegularExpressions;
 
 namespace livestockProject.Controllers
 {
     public class AuthenticationController : Controller
     {
-        private readonly livestockContext _context;
-        public AuthenticationController(livestockContext context)
-        {
-            _context = context;
-        }
         [HttpGet]
         public IActionResult Index()
         {
+            HttpContext.Session.Clear();
+
             return View();
         }
-
+       
         [HttpPost]
-        public async Task<IActionResult> Login(string Username, string password)
+        public IActionResult Login(string Username, string Password)
         {
             var loginResponse = new LoginResponse();
-
-            var user = await _context.SystemUsers.FirstOrDefaultAsync(x => x.Username == Username && x.Password == password);
-
-            if (user != null)
+            DB_UTIL db_UTIL = new DB_UTIL();
+            DataSet ds = new DataSet();
+            string sql = "SELECT * FROM SYSTEM_USERS WHERE  Username = '" + Username + "' AND UPassword ='"+ Password+"'";
+            ds = db_UTIL.ExecuteDataSet(sql);
+            if(ds != null)
             {
-                var userToUpdate = await _context.SystemUsers.FindAsync(user.Id);
-
-                userToUpdate.LastLoginDate = DateTime.Now;
-
-                await _context.SaveChangesAsync();
-
-                loginResponse.Redirect = Url.Action("Index", "Home");
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    if (ds.Tables[0].Rows[0]["IS_ACTIVE"] + "" == "0")
+                    {
+                        loginResponse.ErrorMessage = "Your account is not Active please call the admin";
+                        return Json(loginResponse);
+                    }
+                    string updateSql = "UPDATE SYSTEM_USERS SET LAST_LOGIN_DATE = SYSDATE WHERE ID = " + ds.Tables[0].Rows[0]["ID"];
+                    db_UTIL.ExceuteTrans(updateSql);
+                    Fillsessions(ds);
+                    loginResponse.Redirect = Url.Action("Index", "Home");
+                }
+                else
+                {
+                    loginResponse.ErrorMessage = "Error";
+                }
             }
             else
             {
                 loginResponse.ErrorMessage = "Wrong Username or Password";
             }
-
             return Json(loginResponse);
         }
 
-        //[HttpPost]
-        //public IActionResult Login(string Username, string password)
-        //{
-        //    var loginResponse = new LoginResponse();
+        private void Fillsessions(DataSet UserDs)
+        {
+            UserSeesion user = new UserSeesion();
+            foreach (DataRow row in UserDs.Tables[0].Rows)
+            {
+                user.Id = row["ID"] + "";
+                user.Username = row["USERNAME"] + "";
+                user.NameAr = row["NAME_ARABIC"] + "";
+                user.NameEn = row["NAME_ENGLISH"] + "";
+                user.UserGroupId = row["USER_GROUP_ID"] + "";
+            }
 
-        //    SystemUser user = _context.SystemUsers.FirstOrDefault(x => x.Username == Username && x.Password == password);
+            string userJson = JsonSerializer.Serialize(user);
+            HttpContext.Session.SetString("User", userJson);
+        }
 
-        //    if (user != null)
-        //    {
-        //        // Update the LastLoginDate for the existing user
-        //        user.LastLoginDate = DateTime.Now;
+        public class UserSeesion
+        {
+            public string Id { get; set; }
+            public string Username { get; set; }
+            public string NameAr { get; set; }
+            public string NameEn { get; set; }
+            public string UserGroupId { get; set; }
 
-        //        // Save the changes to the database
-        //        _context.SaveChanges();
-
-        //        loginResponse.Redirect = Url.Action("Index", "Home");
-        //    }
-        //    else
-        //    {
-        //        loginResponse.ErrorMessage = "Wrong Username or Password";
-        //    }
-
-        //    return Json(loginResponse);
-        //}
+        }
 
         public class LoginResponse
         {
@@ -76,15 +88,11 @@ namespace livestockProject.Controllers
 
         [HttpGet]
         public IActionResult Logout()
-        {         
+        {
             HttpContext.Session.Clear();
 
-            return RedirectToAction("Index", "Authentication"); 
+            return RedirectToAction("Index", "Authentication");
         }
 
-        //var currentTime = DateTime.Now.ToString();
-        //HttpContext.Session.SetString("LastVisit", currentTime);
-
-        //var lastVisit = HttpContext.Session.GetString("LastVisit");
     }
 }

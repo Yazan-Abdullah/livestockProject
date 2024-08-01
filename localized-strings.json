@@ -1,0 +1,2644 @@
+﻿[
+  {
+    "Values": {
+      "en": "Welcome",
+      "ar": " اهلاً وسهلاً "
+    },
+    "Key": "Welcome"
+  },
+  {
+    "Values": {
+      "en": "Countries",
+      "ar": "البلدان"
+    },
+    "Key": "SystemCountry"
+  },
+  {
+    "Values": {
+      "en": "Account ID",
+      "ar": "رقم الحساب"
+    },
+    "Key": "AccountID"
+  },
+  {
+    "Values": {
+      "en": "AccountNo",
+      "ar": "رقم الحساب"
+    },
+    "Key": "AccountNo"
+  },
+  {
+    "Values": {
+      "en": "Name",
+      "ar": "الاسم"
+    },
+    "Key": "NAME"
+  },
+  {
+    "Values": {
+      "en": "this field is required",
+      "ar": "هذا الحقل مطلوب"
+    },
+    "Key": "ThisFieldIsRequired"
+  },
+  {
+    "Values": {
+      "en": "Username",
+      "ar": "اسم المستخدم"
+    },
+    "Key": "UserNameOrEmail"
+  },
+  {
+    "Values": {
+      "en": "Password",
+      "ar": "كلمة السر"
+    },
+    "Key": "Password"
+  },
+  {
+    "Values": {
+      "en": "Please verify the information entered",
+      "ar": "الرجاء التاكد من المعلومات المدخلة"
+    },
+    "Key": "PleaseVerifyTheInformationEntered"
+  },
+  {
+    "Values": {
+      "en": "Login",
+      "ar": "تسجيل الدخول"
+    },
+    "Key": "Login"
+  },
+  {
+    "Values": {
+      "en": "ERROR",
+      "ar": "خطأ"
+    },
+    "Key": "ERROR"
+  },
+  {
+    "Values": {
+      "en": "Logout",
+      "ar": "تسجيل خروج"
+    },
+    "Key": "Logout"
+  },
+  {
+    "Values": {
+      "en": "LogOut",
+      "ar": "تسجيل خروج"
+    },
+    "Key": "Logout"
+  },
+  {
+    "Values": {
+      "en": "Dashboard",
+      "ar": "الصفحة الرئيسية"
+    },
+    "Key": "Dashboard"
+  },
+  {
+    "Values": {
+      "en": "WSRemit",
+      "ar": "تحويل WS"
+    },
+    "Key": "WSRemit"
+  },
+  {
+    "Values": {
+      "en": "Welcome",
+      "ar": "مرحبا"
+    },
+    "Key": "Welcome"
+  },
+  {
+    "Values": {
+      "en": "My Account",
+      "ar": "حسابي"
+    },
+    "Key": "MyAccount"
+  },
+  {
+    "Values": {
+      "en": "Users",
+      "ar": "المستخدمين"
+    },
+    "Key": "Users"
+  },
+  {
+    "Values": {
+      "en": "Currency Name",
+      "ar": "اسم العملة"
+    },
+    "Key": "NAME"
+  },
+  {
+    "Values": {
+      "en": "Username",
+      "ar": "اسم المستخدم"
+    },
+    "Key": "Username"
+  },
+  {
+    "Values": {
+      "en": "Email",
+      "ar": "البريد الالكتروني"
+    },
+    "Key": "Email"
+  },
+  {
+    "Values": {
+      "en": "Add",
+      "ar": "اضافة"
+    },
+    "Key": "Add"
+  },
+  {
+    "Values": {
+      "en": "Back",
+      "ar": "رجوع"
+    },
+    "Key": "Back"
+  },
+  {
+    "Values": {
+      "en": "Confirm Password",
+      "ar": "تأكيد كلمة السر"
+    },
+    "Key": "ConfirmPassword"
+  },
+  {
+    "Values": {
+      "en": "Successfully",
+      "ar": "تم بنجاح"
+    },
+    "Key": "Successfully"
+  },
+  {
+    "Values": {
+      "en": "Please Enter All Information",
+      "ar": "الرجاء إدخال جميع المعلومات"
+    },
+    "Key": "PleaseEnterAllInformation"
+  },
+  {
+    "Values": {
+      "en": "Passwords Are Not Equal",
+      "ar": "كلمات المرور غير متساوية"
+    },
+    "Key": "PasswordsAreNotEqual"
+  },
+  {
+    "Values": {
+      "en": "Invalid Email Format",
+      "ar": "تنسيق بريد إلكتروني غير صالح"
+    },
+    "Key": "InvalidEmailFormat"
+  },
+  {
+    "Values": {
+      "en": "BankName/Central Bank",
+      "ar": "اسم البنك/المركزي"
+    },
+    "Key": "BankName"
+  },
+  {
+    "Values": {
+      "en": "Name Arabic",
+      "ar": "الاسم باللغة العربية"
+    },
+    "Key": "NameArabic"
+  },
+  {
+    "Values": {
+      "en": "Edit",
+      "ar": "تعديل"
+    },
+    "Key": "Edit"
+  },
+  {
+    "Values": {
+      "en": "Update",
+      "ar": "تعديل"
+    },
+    "Key": "Update"
+  },
+  {
+    "Values": {
+      "en": "Delete",
+      "ar": "حذف"
+    },
+    "Key": "Delete"
+  },
+  {
+    "Values": {
+      "en": "Are You Sure To Delete ?",
+      "ar": "هل انت متأكد من الحذف ؟"
+    },
+    "Key": "AreYouSureToDelete"
+  },
+  {
+    "Values": {
+      "en": "Yes",
+      "ar": "نعم"
+    },
+    "Key": "Yes"
+  },
+  {
+    "Values": {
+      "en": "Cancel",
+      "ar": "الغاء"
+    },
+    "Key": "Cancel"
+  },
+  {
+    "Values": {
+      "en": "Welcome, you are now in the module_name module",
+      "ar": "اهلا وسهلا انت الان في وحدة module_name"
+    },
+    "Key": "WelcomeYouAreNowInTheModule"
+  },
+  {
+    "Values": {
+      "en": "Accounting",
+      "ar": "محاسبة"
+    },
+    "Key": "Accounting"
+  },
+  {
+    "Values": {
+      "en": "Module Name",
+      "ar": "اسم الوحدة"
+    },
+    "Key": "ModuleName"
+  },
+  {
+    "Values": {
+      "en": "Press To Go",
+      "ar": "انقر للذهاب"
+    },
+    "Key": "PressToGo"
+  },
+  {
+    "Values": {
+      "en": "Accounting",
+      "ar": "محاسبة"
+    },
+    "Key": "Accounting"
+  },
+  {
+    "Values": {
+      "en": "Arabic Name",
+      "ar": "الاسم بالعربي"
+    },
+    "Key": "Arabic Name"
+  },
+  {
+    "Values": {
+      "en": "English Name",
+      "ar": "الاسم بالانجليزي"
+    },
+    "Key": "English Name"
+  },
+  {
+    "Values": {
+      "en": "Add Child",
+      "ar": "اضافة فرع"
+    },
+    "Key": "AddChild"
+  },
+  {
+    "Values": {
+      "en": "Delete Child",
+      "ar": "حذف فرع"
+    },
+    "Key": "DeleteChild"
+  },
+  {
+    "Values": {
+      "en": "To",
+      "ar": "الى"
+    },
+    "Key": "To"
+  },
+  {
+    "Values": {
+      "en": "Please Fill At Least One Child",
+      "ar": "الرجاء تعبئة فرع واحد على الاقل"
+    },
+    "Key": "PleaseFillAtLeastOneChild"
+  },
+  {
+    "Values": {
+      "en": "Please Fill All Child Data",
+      "ar": "الرجاء تعبئة جميع معلومات الابناء"
+    },
+    "Key": "PleaseFillAllChildData"
+  },
+  {
+    "Values": {
+      "en": "Parent",
+      "ar": "يتبع ل"
+    },
+    "Key": "Parent"
+  },
+  {
+    "Values": {
+      "en": "Change Password",
+      "ar": "تعديل كلمة السر"
+    },
+    "Key": "ChangePassword"
+  },
+  {
+    "Values": {
+      "en": "Current Password",
+      "ar": "كلمة السر الحالية"
+    },
+    "Key": "CurrentPassword"
+  },
+  {
+    "Values": {
+      "en": "The Current Password Is Incorrect",
+      "ar": "كلمة السر الحالية خطأ"
+    },
+    "Key": "TheCurrentPasswordIsIncorrect"
+  },
+  {
+    "Values": {
+      "en": "Active",
+      "ar": "فعال"
+    },
+    "Key": "IsActive"
+  },
+  {
+    "Values": {
+      "en": "Are You Sure To Active",
+      "ar": "هل انت متأكد من التفعيل"
+    },
+    "Key": "AreYouSureToActive"
+  },
+  {
+    "Values": {
+      "en": "Are You Sure To DeActive",
+      "ar": "هل انت متأكد من الغاء التفعيل"
+    },
+    "Key": "AreYouSureToDeActive"
+  },
+  {
+    "Values": {
+      "en": "This account is deactive. Please contact the specialists to activate the account",
+      "ar": "هذا الحساب غير فعال. الرجاء التواصل مع اصحاب الاختصاص لتفعيل الحساب"
+    },
+    "Key": "ThisAccountIsDeactivePleaseContactTheSpecialistsToActivateTheAccount"
+  },
+  {
+    "Values": {
+      "en": "Invalid Email",
+      "ar": "اسم المستخدم خطأ"
+    },
+    "Key": "InvalidEmail"
+  },
+  {
+    "Values": {
+      "en": "Invalid Password",
+      "ar": "كلمة السر خطأ"
+    },
+    "Key": "InvalidPassword"
+  },
+  {
+    "Values": {
+      "en": "Journal Voucher",
+      "ar": "سند قيد"
+    },
+    "Key": "JournalVoucher"
+  },
+  {
+    "Values": {
+      "en": "Date",
+      "ar": "التاريخ"
+    },
+    "Key": "Date"
+  },
+  {
+    "Values": {
+      "en": "Voucher Number",
+      "ar": "رقم السند"
+    },
+    "Key": "VoucherNumber"
+  },
+  {
+    "Values": {
+      "en": "Voucher Type",
+      "ar": "نوع السند"
+    },
+    "Key": "VoucherType"
+  },
+  {
+    "Values": {
+      "en": "Account",
+      "ar": "الحساب"
+    },
+    "Key": "Account"
+  },
+  {
+    "Values": {
+      "en": "Cost Center",
+      "ar": "مركز كلفة"
+    },
+    "Key": "CostCenter"
+  },
+  {
+    "Values": {
+      "en": "Debit",
+      "ar": "مدين"
+    },
+    "Key": "Debit"
+  },
+  {
+    "Values": {
+      "en": "Credit",
+      "ar": "دائن"
+    },
+    "Key": "Credit"
+  },
+  {
+    "Values": {
+      "en": "Select",
+      "ar": "اختر"
+    },
+    "Key": "Select"
+  },
+  {
+    "Values": {
+      "en": "Please Fill At Least One",
+      "ar": "الرجاء تعبئة واحد على الاقل"
+    },
+    "Key": "PleaseFillAtLeastOne"
+  },
+  {
+    "Values": {
+      "en": "Please Fill All Details Data",
+      "ar": "الرجاء تعبئة جميع بيانات التفاصيل "
+    },
+    "Key": "PleaseFillAllDetailsData"
+  },
+  {
+    "Values": {
+      "en": "Debit And Credit Not Equal",
+      "ar": "المدين والدائن غير متساوي "
+    },
+    "Key": "DebitAndCreditNotEqual"
+  },
+  {
+    "Values": {
+      "en": "Voucher Amount",
+      "ar": "قيمة السند"
+    },
+    "Key": "VoucherAmount"
+  },
+  {
+    "Values": {
+      "en": "Note",
+      "ar": "ملاحظة"
+    },
+    "Key": "Note"
+  },
+  {
+    "Values": {
+      "en": "Please delete the children, then delete the father",
+      "ar": "الرجاء مسح الاولاد ثم مسج الاب"
+    },
+    "Key": "PleaseDeleteTheChildrenThenDeleteTheFather"
+  },
+  {
+    "Values": {
+      "en": "Save",
+      "ar": "حفظ"
+    },
+    "Key": "Save"
+  },
+  {
+    "Values": {
+      "en": "Modules",
+      "ar": "الوحدات"
+    },
+    "Key": "Modules"
+  },
+  {
+    "Values": {
+      "en": "Module",
+      "ar": "وحدة"
+    },
+    "Key": "Module"
+  },
+  {
+    "Values": {
+      "en": "Created By",
+      "ar": "انشأ من قبل"
+    },
+    "Key": "CreatedBy"
+  },
+  {
+    "Values": {
+      "en": "Created At",
+      "ar": "أنشئت في"
+    },
+    "Key": "CreatedAt"
+  },
+  {
+    "Values": {
+      "en": "Updated By",
+      "ar": "تم التعديل بواسطة"
+    },
+    "Key": "UpdatedBy"
+  },
+  {
+    "Values": {
+      "en": "Updated At",
+      "ar": "تم التعديل في"
+    },
+    "Key": "UpdatedAt"
+  },
+  {
+    "Values": {
+      "en": "Show",
+      "ar": "عرض"
+    },
+    "Key": "Show"
+  },
+  {
+    "Values": {
+      "en": "Catch Voucher",
+      "ar": "سند قبض"
+    },
+    "Key": "CatchVoucher"
+  },
+  {
+    "Values": {
+      "en": "Payment Account",
+      "ar": "الحساب الدافع"
+    },
+    "Key": "PaymentAccount"
+  },
+  {
+    "Values": {
+      "en": "Paymant Name",
+      "ar": "اسم الدافع"
+    },
+    "Key": "PaymantName"
+  },
+  {
+    "Values": {
+      "en": "Account Cash",
+      "ar": "حساب الصندوق"
+    },
+    "Key": "BoxAccount"
+  },
+  {
+    "Values": {
+      "en": "Bank Check Account",
+      "ar": "حساب الشيكات"
+    },
+    "Key": "BankCheckAccount"
+  },
+  {
+    "Values": {
+      "en": "Credit Card Account",
+      "ar": "حساب البطاقة الائتمانية"
+    },
+    "Key": "CreditCardAccount"
+  },
+  {
+    "Values": {
+      "en": "Amount Box",
+      "ar": "قيمة حساب الصندوق"
+    },
+    "Key": "AmountBox"
+  },
+  {
+    "Values": {
+      "en": "Amount Credit Card",
+      "ar": "قيمة حساب البطاقة"
+    },
+    "Key": "AmountCreditCard"
+  },
+  {
+    "Values": {
+      "en": "Amount Bank Check",
+      "ar": "قيمة حساب الشيكات"
+    },
+    "Key": "AmountBankCheck"
+  },
+  {
+    "Values": {
+      "en": "Sub Catch Number",
+      "ar": "رقم قبض فرعي"
+    },
+    "Key": "SubCatchNumber"
+  },
+  {
+    "Values": {
+      "en": "Sub Catch Date",
+      "ar": "تاريخ قبض فرعي"
+    },
+    "Key": "SubCatchDate"
+  },
+  {
+    "Values": {
+      "en": "Bank Check Number",
+      "ar": "رقم الشيك"
+    },
+    "Key": "BankCheckNumber"
+  },
+  {
+    "Values": {
+      "en": "Amount",
+      "ar": "المبلغ"
+    },
+    "Key": "Amount"
+  },
+  {
+    "Values": {
+      "en": "Bank",
+      "ar": "البنك"
+    },
+    "Key": "Bank"
+  },
+  {
+    "Values": {
+      "en": "Due Date",
+      "ar": "تاريخ الاستحقاق"
+    },
+    "Key": "DueDate"
+  },
+  {
+    "Values": {
+      "en": "Clutch Name",
+      "ar": "اسم الساحب"
+    },
+    "Key": "ClutchName"
+  },
+  {
+    "Values": {
+      "en": "Is Jero",
+      "ar": "Is Jero"
+    },
+    "Key": "IsJero"
+  },
+  {
+    "Values": {
+      "en": "No",
+      "ar": "لا"
+    },
+    "Key": "No"
+  },
+  {
+    "Values": {
+      "en": "The amount of the bank is not equal to the sum of the banks amounts",
+      "ar": "مبلغ البنك لا يساوي مجموع مبالغ البنوك"
+    },
+    "Key": "TheAmountOfTheBankIsNotEqualToTheSumOfTheBanksAmounts"
+  },
+  {
+    "Values": {
+      "en": "Spent Voucher",
+      "ar": "سند صرف"
+    },
+    "Key": "SpentVoucher"
+  },
+  {
+    "Values": {
+      "en": "Account Name Of Payee",
+      "ar": "رقم الحساب المدفوع له"
+    },
+    "Key": "AccountNameOfPayee"
+  },
+  {
+    "Values": {
+      "en": "Spent Type",
+      "ar": "نوع الصرف"
+    },
+    "Key": "SpentType"
+  },
+  {
+    "Values": {
+      "en": "Majerah Checks",
+      "ar": "شيكات مجيرة"
+    },
+    "Key": "MajerahChecks"
+  },
+  {
+    "Values": {
+      "en": "Cash Checks",
+      "ar": "شيكات نقدية"
+    },
+    "Key": "CashChecks"
+  },
+  {
+    "Values": {
+      "en": "Post Dated Checks",
+      "ar": "شيكات اجلة"
+    },
+    "Key": "PostDatedChecks"
+  },
+  {
+    "Values": {
+      "en": "Please Fill At Least One Check Details",
+      "ar": "الرجاء ادخال تفاصيل شيك واحد على الاقل"
+    },
+    "Key": "PleaseFillAtLeastOneCheckDetails"
+  },
+  {
+    "Values": {
+      "en": "Please Fill All Check Details Data",
+      "ar": "الرجاء تعبئة جميع بيانات تفاصيل الشيكات"
+    },
+    "Key": "PleaseFillAllCheckDetailsData"
+  },
+  {
+    "Values": {
+      "en": "Please Fill At Least One Account Details",
+      "ar": "الرجاء ادخال تفاصيل حساب واحد على الاقل"
+    },
+    "Key": "PleaseFillAtLeastOneAccountDetails"
+  },
+  {
+    "Values": {
+      "en": "Please Fill All Account Details Data",
+      "ar": "الرجاء تعبئة جميع بيانات تفاصيل الحسابات"
+    },
+    "Key": "PleaseFillAllAccountDetailsData"
+  },
+  {
+    "Values": {
+      "en": "The total amounts entered in cash and in the bank Not equal to the sum of the account amounts",
+      "ar": "مجموع المبالغ المدخلة على النقد وعلى البنك غير مساوية لمجموع مبالغ الحسابات"
+    },
+    "Key": "TheTotalAmountsEnteredInCashAndInTheBankNotEqualToTheSumOfTheAccountAmounts"
+  },
+  {
+    "Values": {
+      "en": "The total amounts entered in the bank Not equal to the sum of the banks amounts",
+      "ar": "مجموع المبالغ المدخلة على البنك غير مساوية لمجموع مبالغ البنوك"
+    },
+    "Key": "TheTotalAmountsEnteredInTheBankNotEqualToTheSumOfTheBanksAmounts"
+  },
+  {
+    "Values": {
+      "en": "Name of Payee",
+      "ar": "اسم المدفوع له"
+    },
+    "Key": "NameOfPayee"
+  },
+  {
+    "Values": {
+      "en": "Statment Of Account",
+      "ar": "كشف الحساب"
+    },
+    "Key": "StatmentOfAccount"
+  },
+  {
+    "Values": {
+      "en": "Balance",
+      "ar": "الرصيد"
+    },
+    "Key": "Balance"
+  },
+  {
+    "Values": {
+      "en": "From Date",
+      "ar": "من تاريخ"
+    },
+    "Key": "FromDate"
+  },
+  {
+    "Values": {
+      "en": "To Date",
+      "ar": "الى تاريخ"
+    },
+    "Key": "ToDate"
+  },
+  {
+    "Values": {
+      "en": "Query",
+      "ar": "استعلام"
+    },
+    "Key": "query"
+  },
+  {
+    "Values": {
+      "en": "Current Balance",
+      "ar": "الرصيد الحالي"
+    },
+    "Key": "CurrentBalance"
+  },
+  {
+    "Values": {
+      "en": "Previos Balance",
+      "ar": "الرصيد السابق"
+    },
+    "Key": "PreviosBalance"
+  },
+  {
+    "Values": {
+      "en": "Vouchers",
+      "ar": "سندات"
+    },
+    "Key": "Vouchers"
+  },
+  {
+    "Values": {
+      "en": "Close",
+      "ar": "خروج"
+    },
+    "Key": "Close"
+  },
+  {
+    "Values": {
+      "en": "Trial Balance",
+      "ar": "ميزان المراجعة"
+    },
+    "Key": "TrialBalance"
+  },
+  {
+    "Values": {
+      "en": "Until Date",
+      "ar": "لغاية تاريخ"
+    },
+    "Key": "UntilDate"
+  },
+  {
+    "Values": {
+      "en": "Add New",
+      "ar": "اضافة جديد"
+    },
+    "Key": "AddNew"
+  },
+  {
+    "Values": {
+      "en": "Difference Sum Debit/Credit",
+      "ar": "الفرق بين مجموع المدين/الدائن"
+    },
+    "Key": "DifferenceSumDebitCredit"
+  },
+  {
+    "Values": {
+      "en": "the name nameReplace already used",
+      "ar": "الاسم nameReplace مستخدم بالفعل"
+    },
+    "Key": "TheNameNameReplaceAlreadyUsed"
+  },
+  {
+    "Values": {
+      "en": "The account cannot be deleted, this account already has transactions",
+      "ar": "لا يمكن حذف الحساب، هذا الحساب به معاملات بالفعل"
+    },
+    "Key": "TheAccountCannotBeDeletedThisAccountAlreadyHasTransactions"
+  },
+  {
+    "Values": {
+      "en": "search",
+      "ar": "بحث عميل"
+    },
+    "Key": "Filter"
+  },
+  {
+    "Values": {
+      "en": "search",
+      "ar": "بحث "
+    },
+    "Key": "Serch"
+  },
+  {
+    "Values": {
+      "en": "The cuurent password is already this the new password",
+      "ar": "كلمة المرور الحالية هي بالفعل كلمة المرور الجديدة"
+    },
+    "Key": "TheCuurentPasswordIsAlreadyThisTheNewPassword"
+  },
+  {
+    "Values": {
+      "en": "Currency Number",
+      "ar": "رقم العملة"
+    },
+    "Key": "CURRENCY NUMBER"
+  },
+
+  {
+    "Values": {
+      "en": "Currency code",
+      "ar": "رمز العملة"
+    },
+    "Key": "CurCode"
+  },
+  {
+    "Values": {
+      "en": "Currency",
+      "ar": "العملة"
+    },
+    "Key": "CURRENCY"
+  },
+  {
+    "Values": {
+      "en": "Evaluattion Price",
+      "ar": "سعر التقييم"
+    },
+    "Key": "EVALUATIONPRICE"
+  },
+  {
+    "Values": {
+      "en": "Rate Disparity",
+      "ar": "نسبة التفاوت"
+    },
+    "Key": "VARIANCERATIO"
+  },
+  {
+    "Values": {
+      "en": "Min Buy",
+      "ar": "اقل سعر شراء"
+    },
+    "Key": "MINBUY"
+  },
+  {
+    "Values": {
+      "en": "Price Buy",
+      "ar": "سعر الشراء"
+    },
+    "Key": "PRICEBUY"
+  },
+  {
+    "Values": {
+      "en": "Max Buy",
+      "ar": "اعلى سعر شراء"
+    },
+    "Key": "MAXBUY"
+  },
+  {
+    "Values": {
+      "en": "Min Sell",
+      "ar": "اقل سعر بيع"
+    },
+    "Key": "MINSELL"
+  },
+  {
+    "Values": {
+      "en": "Price Sell",
+      "ar": "سعر البيع"
+    },
+    "Key": "PRICESELL"
+  },
+  {
+    "Values": {
+      "en": "Max Sell",
+      "ar": "اعلى سعر بيع"
+    },
+    "Key": "MAXSELL"
+  },
+  {
+    "Values": {
+      "en": "Code",
+      "ar": "الرمز"
+    },
+    "Key": "CODE"
+  },
+  {
+    "Values": {
+      "en": "Buy Price",
+      "ar": "سعر الشراء"
+    },
+    "Key": "BuyPrice"
+  },
+  {
+    "Values": {
+      "en": "Sell Price",
+      "ar": "سعر البيع"
+    },
+    "Key": "SellPrice"
+  },
+  {
+    "Values": {
+      "en": "Account Number",
+      "ar": "رقم الحساب"
+    },
+    "Key": "ACCOUNTNUMBER"
+  },
+  {
+    "Values": {
+      "en": "Country",
+      "ar": "الدولة"
+    },
+    "Key": "Country"
+  },
+  {
+    "Values": {
+      "en": "Ledger Account Classification",
+      "ar": "تصنيف حساب الاستاذ"
+    },
+    "Key": "LedgerAccountClassification"
+  },
+  {
+    "Values": {
+      "en": "Central Account Classification",
+      "ar": "تصنيف حساب المركزي"
+    },
+    "Key": "CentralAccountClassification"
+  },
+  {
+    "Values": {
+      "en": "Account Nature Reports",
+      "ar": "طبيعة الحساب للتقارير"
+    },
+    "Key": "AccountNatureReports"
+  },
+  {
+    "Values": {
+      "en": "Account Reference Number",
+      "ar": "رقم مرجع الحساب"
+    },
+    "Key": "AccountReferenceNumber"
+  },
+
+  {
+    "Values": {
+      "en": "Currencies",
+      "ar": "سجل العملات"
+    },
+    "Key": "Currencies"
+  },
+  {
+    "Values": {
+      "en": "Currencies Prices",
+      "ar": "أسعار العملات"
+    },
+    "Key": "CurrenciesPrices"
+  },
+  {
+    "Values": {
+      "en": "Accounts",
+      "ar": "الحسابات"
+    },
+    "Key": "Accounts"
+  },
+
+  {
+    "Values": {
+      "en": "Customers Information",
+      "ar": "بيانات العملاء"
+    },
+    "Key": "Customers"
+  },
+  {
+    "Values": {
+      "en": "Agents Book",
+      "ar": "سجل الوكلاء"
+    },
+    "Key": "AgentsBook"
+  },
+  {
+    "Values": {
+      "en": "Countries Codes",
+      "ar": "فهرس الدول"
+    },
+    "Key": "CountriesCodes"
+  },
+  {
+    "Values": {
+      "en": "Occupation",
+      "ar": "الوظيفة"
+    },
+    "Key": "Occupation"
+  },
+  {
+    "Values": {
+      "en": "Identification Codes",
+      "ar": "رموز اثبات الشخصية"
+    },
+    "Key": "SystemIdentity"
+  },
+  {
+    "Values": {
+      "en": "Single Currency in Arabic",
+      "ar": "مفرد العملة بالعربية"
+    },
+    "Key": "SingleCurrency_Ar"
+  },
+  {
+    "Values": {
+      "en": "Single Currency in English",
+      "ar": "مفرد العملة بالإنجليزية"
+    },
+    "Key": "SingleCurrency_En"
+  },
+  {
+    "Values": {
+      "en": "Double Currency in Arabic",
+      "ar": "مثنى العملة بالعربية"
+    },
+    "Key": "CurrencyDual_Ar"
+  },
+  {
+    "Values": {
+      "en": "Double Currency in English",
+      "ar": "مثنى العملة بالإنجليزية"
+    },
+    "Key": "CurrencyDual_En"
+  },
+  {
+    "Values": {
+      "en": "plural Currency in Arabic",
+      "ar": "جمع العملة بالعربية"
+    },
+    "Key": "CurrencyCollection_Ar"
+  },
+  {
+    "Values": {
+      "en": "plural Currency in English",
+      "ar": "جمع العملة بالإنجليزية"
+    },
+    "Key": "CurrencyCollection_En"
+  },
+  {
+    "Values": {
+      "en": "Fractional Currency in Arabic",
+      "ar": "كسور العملة بالعربية"
+    },
+    "Key": "FractionsCurrency_Ar"
+  },
+  {
+    "Values": {
+      "en": "Fractional Currency in English",
+      "ar": "كسور العملة بالانجليزية"
+    },
+    "Key": "FractionsCurrency_En"
+  },
+  {
+    "Values": {
+      "en": "Number of Decimal",
+      "ar": "عدد المنازل العشرية"
+    },
+    "Key": "NumberDecimalPlaces"
+  },
+  {
+    "Values": {
+      "en": "Unit",
+      "ar": "الوحدة"
+    },
+    "Key": "Unit"
+  },
+  {
+    "Values": {
+      "en": "image",
+      "ar": "الصورة"
+    },
+    "Key": "IMAGE"
+  },
+  {
+    "Values": {
+      "en": "Currencies Rate Prices",
+      "ar": "أسعار تقييم العملات"
+    },
+    "Key": "Currencies"
+  },
+  {
+    "Values": {
+      "en": "Capital",
+      "ar": "رأس المال"
+    },
+    "Key": "Capital"
+  },
+  {
+    "Values": {
+      "en": "Name(Ar)",
+      "ar": "اسم العميل (عربي)"
+    },
+    "Key": "NameAr"
+  },
+  {
+    "Values": {
+      "en": "Name(Eng)",
+      "ar": "اسم العميل(Eng)"
+    },
+    "Key": "NameEn"
+  },
+  {
+    "Values": {
+      "en": "WhatsApp",
+      "ar": "واتساب"
+    },
+    "Key": "WhatsApp"
+  },
+  {
+    "Values": {
+      "en": "Gender",
+      "ar": "الجنس"
+    },
+    "Key": "Sex"
+  },
+  {
+    "Values": {
+      "en": "Nationality",
+      "ar": "الجنسية"
+    },
+    "Key": "Nationality"
+  },
+  {
+    "Values": {
+      "en": "Country Work",
+      "ar": "بلد العمل"
+    },
+    "Key": "CountryWork"
+  },
+  {
+    "Values": {
+      "en": "Customer classification",
+      "ar": "تصنيف العميل"
+    },
+    "Key": "CustomerRating"
+  },
+  {
+    "Values": {
+      "en": "Customer Category",
+      "ar": "فئة العميل"
+    },
+    "Key": "CustomerCategory"
+  },
+  {
+    "Values": {
+      "en": "Identity Type",
+      "ar": "نوع الإثبات"
+    },
+    "Key": "TypeProof"
+  },
+  {
+    "Values": {
+      "en": "ProofNumber",
+      "ar": "رقم الاثبات"
+    },
+    "Key": "Identity No"
+  },
+  {
+    "Values": {
+      "en": "Place Of Issue",
+      "ar": "مكان الاصدار"
+    },
+    "Key": "PlaceIssue"
+  },
+  {
+    "Values": {
+      "en": "Governorate",
+      "ar": "المحافظة"
+    },
+    "Key": "Governorate"
+  },
+  {
+    "Values": {
+      "en": "IssueDate",
+      "ar": "تاريخ الاصدار"
+    },
+    "Key": "IssueDate"
+  },
+  {
+    "Values": {
+      "en": "ExpiryDate",
+      "ar": "تاريخ الانتهاء"
+    },
+    "Key": "ExpiryDate"
+  },
+  {
+    "Values": {
+      "en": "Front ID img ",
+      "ar": "صورة الهوية الأمامية"
+    },
+    "Key": "ImgPath"
+  },
+  {
+    "Values": {
+      "en": "Date Of Birth",
+      "ar": "تاريخ الميلاد"
+    },
+    "Key": "DOB"
+  },
+  {
+    "Values": {
+      "en": "PlaceOB",
+      "ar": "مكان الميلاد"
+    },
+    "Key": "PlaceOB"
+  },
+  {
+    "Values": {
+      "en": "Back img of ID ",
+      "ar": "صورة الهوية من الخلف"
+    },
+    "Key": "ImgPathBack"
+  },
+
+  {
+    "Values": {
+      "en": "Other Nationality",
+      "ar": "جنسيات اخرى"
+    },
+    "Key": "OtherNati"
+  },
+  {
+    "Values": {
+      "en": "City",
+      "ar": "المدينة"
+    },
+    "Key": "City"
+  },
+  {
+    "Values": {
+      "en": "Governorate",
+      "ar": "المحافظة"
+    },
+    "Key": "Province"
+  },
+  {
+    "Values": {
+      "en": "Building No",
+      "ar": "رقم البناية"
+    },
+    "Key": "BuildingNo"
+  },
+  {
+    "Values": {
+      "en": "StreetName",
+      "ar": "اسم الشارع"
+    },
+    "Key": "Street Name"
+  },
+  {
+    "Values": {
+      "en": "Fax",
+      "ar": "فاكس"
+    },
+    "Key": "Fax"
+  },
+  {
+    "Values": {
+      "en": "District",
+      "ar": "الحي/المنطقة"
+    },
+    "Key": "District"
+  },
+  {
+    "Values": {
+      "en": "Address",
+      "ar": "االعنوان"
+    },
+    "Key": "Adrs"
+  },
+  {
+    "Values": {
+      "en": "Source of Income",
+      "ar": "مصدر الدخل"
+    },
+    "Key": "IncomeName"
+  },
+  {
+    "Values": {
+      "en": "Out Address",
+      "ar": "العنوان خارج الاردن"
+    },
+    "Key": "OutAdrs"
+  },
+  {
+    "Values": {
+      "en": "Company Name",
+      "ar": "اسم الشركة"
+    },
+    "Key": "Company"
+  },
+  {
+    "Values": {
+      "en": "Company Address",
+      "ar": "عنوان الشركة"
+    },
+    "Key": "CompanyAdrs"
+  },
+  {
+    "Values": {
+      "en": "Occupation",
+      "ar": "الوظيفة"
+    },
+    "Key": "Occupations"
+  },
+  {
+    "Values": {
+      "en": "purpose",
+      "ar": "الغاية"
+    },
+    "Key": "AsonTrans"
+  },
+  {
+    "Values": {
+      "en": "CompanyTel",
+      "ar": "هاتف الشركة"
+    },
+    "Key": "CompanyTel"
+  },
+  {
+    "Values": {
+      "en": "Box No",
+      "ar": "ص.ب"
+    },
+    "Key": "Box"
+  },
+  {
+    "Values": {
+      "en": "Work Nature",
+      "ar": "طبيعة العمل"
+    },
+    "Key": "Nature"
+  },
+  {
+    "Values": {
+      "en": "Tax No",
+      "ar": "الرقم الضريبي"
+    },
+    "Key": "TaxNo"
+  },
+  {
+    "Values": {
+      "en": "Email",
+      "ar": "البريد الالكتروني"
+    },
+    "Key": "CusEmail"
+  },
+  {
+    "Values": {
+      "en": "Monthly Income",
+      "ar": "الدخل الشهري"
+    },
+    "Key": "MonthlyIncome"
+  },
+  {
+    "Values": {
+      "en": "Branch Note",
+      "ar": "ملاحظات الفرع"
+    },
+    "Key": "BranchNote"
+  },
+  {
+    "Values": {
+      "en": "Partner Name",
+      "ar": "اسم الشريك"
+    },
+    "Key": "PARTNERNAME"
+  },
+  {
+    "Values": {
+      "en": "Nationality",
+      "ar": "الجنسية"
+    },
+    "Key": "NATIONALITY"
+  },
+  {
+    "Values": {
+      "en": "Country of Residence",
+      "ar": "بلد الاقامة"
+    },
+    "Key": "COUNTRY"
+  },
+  {
+    "Values": {
+      "en": "Customer Note",
+      "ar": "ملاحظات العميل"
+    },
+    "Key": "CusNote"
+  },
+  {
+    "Values": {
+      "en": "Phone Number",
+      "ar": "رقم الهاتف"
+    },
+    "Key": "Phone"
+  },
+  {
+    "Values": {
+      "en": "Nationality NO",
+      "ar": "الرقم الوطني"
+    },
+    "Key": "NATIONALITYNO"
+  },
+  {
+    "Values": {
+      "en": "part",
+      "ar": "الحصة"
+    },
+    "Key": "PART"
+  },
+  {
+    "Values": {
+      "en": "Partners",
+      "ar": "الشركاء"
+    },
+    "Key": "Partners"
+  },
+  {
+    "Values": {
+      "en": "Authorized signatories",
+      "ar": "المفوضين بالتوقيع"
+    },
+    "Key": "AuthorizedSignatories"
+  },
+  {
+    "Values": {
+      "en": "Represen Name",
+      "ar": "اسم المفوض"
+    },
+    "Key": "REPRESENNAME"
+  },
+  {
+    "Values": {
+      "en": "Expiry Date/Authorization",
+      "ar": "تاريخ انتهاء التفويض"
+    },
+    "Key": "EXPDATE"
+  },
+  {
+    "Values": {
+      "en": "Active",
+      "ar": "فعال"
+    },
+    "Key": "INACTIVE"
+  },
+
+
+  {
+    "Values": {
+      "en": "Other Documents",
+      "ar": "وثائق اخرى"
+    },
+    "Key": "OtherDocuments"
+  },
+  {
+    "Values": {
+      "en": "Company Classification",
+      "ar": "تصنيف الشركة"
+    },
+    "Key": "COMPANYCALSSIFICATION"
+  },
+  {
+    "Values": {
+      "en": "Company Classification",
+      "ar": "تصنيف الشركة"
+    },
+    "Key": "CompanyClassification"
+  },
+  {
+    "Values": {
+      "en": "Attachment",
+      "ar": "مرفق"
+    },
+    "Key": "FILE"
+  },
+  {
+    "Values": {
+      "en": "Expiry date",
+      "ar": "تاريخ الانتهاء"
+    },
+    "Key": "EXPDATE"
+  },
+  {
+    "Values": {
+      "en": "Identity Type",
+      "ar": "نوع الاثبات"
+    },
+    "Key": "CARDTYPE"
+  },
+  {
+    "Values": {
+      "en": "Identity No",
+      "ar": "رقم الاثبات"
+    },
+    "Key": "CARDNO"
+  },
+  {
+    "Values": {
+      "en": "Issue Date",
+      "ar": "تاريخ الاصدار"
+    },
+    "Key": "ISSUEDATE"
+  },
+  {
+    "Values": {
+      "en": "EXPDATE",
+      "ar": "تاريخ الانتهاء"
+    },
+    "Key": "EXPDATE"
+  },
+  {
+    "Values": {
+      "en": "Place Of Issue",
+      "ar": "مكان الاصدار"
+    },
+    "Key": "PLACEISSUE"
+  },
+  {
+    "Values": {
+      "en": "Phone NO",
+      "ar": "رقم الهاتف"
+    },
+    "Key": "PHONE"
+  },
+  {
+    "Values": {
+      "en": "Currency Code",
+      "ar": "رمز العملة"
+    },
+    "Key": "CURRENCY CODE"
+  },
+  {
+    "Values": {
+      "en": "Account Name(Ar)",
+      "ar": "اسم الحساب (عربي)"
+    },
+    "Key": "Name_Ar"
+  },
+
+
+  {
+    "Values": {
+      "en": "Account",
+      "Name(Eng)\",": null,
+      "ar": "اسم الحساب(Eng)"
+    },
+    "Key": "Name_En"
+  },
+
+  {
+    "Values": {
+      "en": "There Is No Change In Currency Prices",
+      "ar": "لا يوجد تغيير في العملة  "
+    },
+    "Key": "ThereIsNoChangeInCurrencyPrices"
+  },
+  {
+    "Values": {
+      "en": "Currency Number",
+      "ar": "رقم العملة"
+    },
+    "Key": "CURRENCYNUMBER"
+  },
+  {
+    "Values": {
+      "en": "image",
+      "ar": "الصورة"
+    },
+    "Key": "IMG"
+  },
+  {
+    "Values": {
+      "en": "Edit",
+      "ar": "تعديل "
+    },
+    "Key": "ACTION"
+  },
+  {
+    "Values": {
+      "en": "NationalityID",
+      "ar": "الرقم الوطني"
+    },
+    "Key": "IDNumber"
+  },
+
+  {
+    "Values": {
+      "en": "Number",
+      "ar": "الرقم"
+    },
+    "Key": "SNO"
+  },
+
+  {
+    "Values": {
+      "en": "Country Name",
+      "ar": "اسم الدولة"
+    },
+    "Key": "COUNTRYNSME"
+  },
+
+
+  {
+    "Values": {
+      "en": "Code",
+      "ar": "الرمز"
+    },
+    "Key": "ISOCODE"
+  },
+
+
+  {
+    "Values": {
+      "en": "Country Category",
+      "ar": "التصنيف"
+    },
+    "Key": "Country_Category"
+  },
+
+  {
+    "Values": {
+      "en": "Show Country Category",
+      "ar": "تظهر ضمن التصنيف"
+    },
+    "Key": "Show_Country_Category"
+  },
+
+  {
+    "Values": {
+      "en": "Country Name(Eng)",
+      "ar": "اسم الدولة(Eng)"
+    },
+    "Key": "COUNTRY_EN"
+  },
+  {
+    "Values": {
+      "en": "Country Name(Ar)",
+      "ar": "(Ar)اسم الدولة"
+    },
+    "Key": "COUNTRYAR"
+  },
+
+  {
+    "Values": {
+      "en": "Region",
+      "ar": "المنطقة"
+    },
+    "Key": "REGIEN"
+  },
+  {
+    "Values": {
+      "en": "Code",
+      "ar": "الرمز"
+    },
+    "Key": "ISO_ID"
+  },
+
+  {
+    "Values": {
+      "en": "CBJ Name",
+      "ar": "الاسم/ البنك المركزي"
+    },
+    "Key": "CBJ_NAME"
+  },
+
+  {
+    "Values": {
+      "en": "Country Order",
+      "ar": "الترتيب"
+    },
+    "Key": "COUNTRY_ORDER"
+  },
+  {
+    "Values": {
+      "en": "System Users",
+      "ar": "ملف المستخدمين"
+    },
+    "Key": "SystemUsers"
+  },
+
+  {
+    "Values": {
+      "en": "Account Cash",
+      "ar": "حساب الصندوق"
+    },
+    "Key": "USERGROUPID"
+  },
+
+  {
+    "Values": {
+      "en": "Branch",
+      "ar": "الفرع"
+    },
+    "Key": "USERBranch"
+  },
+
+  {
+    "Values": {
+      "en": "ID",
+      "ar": "الرقم"
+    },
+    "Key": "ID"
+  },
+
+  {
+    "Values": {
+      "en": "Full Name",
+      "ar": "الاسم الرباعي"
+    },
+    "Key": "USERFULLNAME"
+  },
+  {
+    "Values": {
+      "en": "Job Number",
+      "ar": "الرقم الوظيفي"
+    },
+    "Key": "JobNumber"
+  },
+
+  {
+    "Values": {
+      "en": "Remit Limit",
+      "ar": "سقف الحوالة"
+    },
+    "Key": "RemitLimit"
+  },
+
+  {
+    "Values": {
+      "en": "Exchange Limit",
+      "ar": "سقف البيع والشراء"
+    },
+    "Key": "ExchangeLimit"
+  },
+  {
+    "Values": {
+      "en": "Branch",
+      "ar": "الفرع"
+    },
+    "Key": "Userbranch"
+  },
+
+
+  {
+    "Values": {
+      "en": "Cash Account",
+      "ar": "حساب الصندوق"
+    },
+    "Key": "UserDefAcc"
+  },
+
+  {
+    "Values": {
+      "en": "Agent",
+      "ar": "الوكيل"
+    },
+    "Key": "AgentAcc"
+  },
+
+  {
+    "Values": {
+      "en": "Casher",
+      "ar": "كاشير"
+    },
+    "Key": "IsCasher"
+  },
+  {
+    "Values": {
+      "en": "Regional Manager",
+      "ar": "مدير اقليمي "
+    },
+    "Key": "IsRegionalManager"
+  },
+  {
+    "Values": {
+      "en": "All Accounts Are Visible",
+      "ar": "All Accounts Are Visible"
+    },
+    "Key": "AllAcc"
+  },
+  {
+    "Values": {
+      "en": "Branch Admin",
+      "ar": "مسؤول الفرع"
+    },
+    "Key": "IsBranchAdmin"
+  },
+
+  {
+    "Values": {
+      "en": "Default system",
+      "ar": "النظام الافتراضي\t"
+    },
+    "Key": "InitialModule"
+  },
+
+  {
+    "Values": {
+      "en": "Group",
+      "ar": "المجموعة"
+    },
+    "Key": "UserGroupId"
+  },
+
+  {
+    "Values": {
+      "en": "Dashboard Level",
+      "ar": "Dashboard Level"
+    },
+    "Key": "DashboardLevel"
+  },
+  {
+    "Values": {
+      "en": "Password",
+      "ar": "كلمة السر"
+    },
+    "Key": "Userpassword"
+  },
+  {
+    "Values": {
+      "en": "Full Name(Eng)",
+      "ar": "الاسم الرباعي(Eng)"
+    },
+    "Key": "UserFullNameEn"
+  },
+  {
+    "Values": {
+      "en": "Group",
+      "ar": "مجموعة الحسابات "
+    },
+    "Key": "AccountsGroup"
+  },
+  {
+    "Values": {
+      "en": "Decrease Account",
+      "ar": "حساب النقوصات"
+    },
+    "Key": "ShortageAcc"
+  },
+  {
+    "Values": {
+      "en": "Increment Account",
+      "ar": "حساب الزيادات"
+    },
+    "Key": "IncrementAcc"
+  },
+  {
+    "Values": {
+      "en": "Account Commission Outward",
+      "ar": "حساب العمولة الصادرة"
+    },
+    "Key": "Account Commission Inward"
+  },
+  {
+    "Values": {
+      "en": ".........",
+      "ar": "حساب العمولة الواردة"
+    },
+    "Key": "Account CommissionIn"
+  },
+  {
+    "Values": {
+      "en": "Account Commission Differance",
+      "ar": "حساب ايرادات فرق عملة"
+    },
+    "Key": "AccCommissionDif"
+  },
+  {
+    "Values": {
+      "en": "Outward Remit Account With payment fees",
+      "ar": "حساب الحوالات الصادرة برسم التسديد"
+    },
+    "Key": "AccOutward"
+  },
+  {
+    "Values": {
+      "en": "Inward Remit Account With payment fees",
+      "ar": "ح الحوالات الواردة برسم التسديد"
+    },
+    "Key": "AccInward"
+  },
+  {
+    "Values": {
+      "en": "Agent Country",
+      "ar": "بلد الوكيل"
+    },
+    "Key": "AgentCountry"
+  },
+  {
+    "Values": {
+      "en": "BalanceLimit",
+      "ar": "سقف الرصيد"
+    },
+    "Key": "BalanceLimit"
+  },
+  {
+    "Values": {
+      "en": "Number Digit",
+      "ar": "عدد الارقام"
+    },
+    "Key": "NumberDigit"
+  },
+  {
+    "Values": {
+      "en": "Prefix",
+      "ar": "Prefix"
+    },
+    "Key": "Prefix"
+  },
+  {
+    "Values": {
+      "en": "Branches",
+      "ar": "الفروع"
+    },
+    "Key": "Branchs"
+  },
+  {
+    "Values": {
+      "en": "AddressAr",
+      "ar": "العنوان(عربي)"
+    },
+    "Key": "ADDRES_AR"
+  },
+  {
+    "Values": {
+      "en": "AddressEn",
+      "ar": "العنوان(Eng)"
+    },
+    "Key": "ADDRES_EN"
+  },
+  {
+    "Values": {
+      "en": "PhoneNumber",
+      "ar": "رقم الهاتف"
+    },
+    "Key": "PHONEONE"
+  },
+  {
+    "Values": {
+      "en": "PhoneNumber(2)",
+      "ar": "رقم الهاتف(2)"
+    },
+    "Key": "PHONETWO"
+  },
+  {
+    "Values": {
+      "en": "City",
+      "ar": "المدينة"
+    },
+    "Key": "CITY"
+  },
+  {
+    "Values": {
+      "en": "Branch Code",
+      "ar": "رمز الفرع للوكيل"
+    },
+    "Key": "BRANCHCODE"
+  },
+  {
+    "Values": {
+      "en": "Active",
+      "ar": "فعال"
+    },
+    "Key": "ACTIVE"
+  },
+
+  {
+    "Values": {
+      "en": "Settlement price",
+      "ar": "اسعار التسوية"
+    },
+    "Key": "SettlementPrice"
+  },
+  {
+    "Values": {
+      "en": "Settlement currency",
+      "ar": "عملة التسوية"
+    },
+    "Key": "SETTNAME"
+  },
+  {
+    "Values": {
+      "en": "CurrName",
+      "ar": "عملة الحوالة"
+    },
+    "Key": "CURRNAME"
+  },
+  {
+    "Values": {
+      "en": "SettRatIn",
+      "ar": "سعر الصرف الوارد له"
+    },
+    "Key": "SETTRATEIN"
+  },
+  {
+    "Values": {
+      "en": "SettRatOut",
+      "ar": "سعر الصرف الصادرله"
+    },
+    "Key": "SETTRATEOUT"
+  },
+  {
+    "Values": {
+      "en": "RateInvers",
+      "ar": "سعر الصرف القسمة"
+    },
+    "Key": "RATEINVERS"
+  },
+  {
+    "Values": {
+      "en": "CommissionType",
+      "ar": "نوع العمولة الواردة"
+    },
+    "Key": "COMMISSIONTYPE"
+  },
+  {
+    "Values": {
+      "en": "RemitType",
+      "ar": "نوع الحوالة"
+    },
+    "Key": "REMTYPE"
+  },
+  {
+    "Values": {
+      "en": "ReceIpCurrency",
+      "ar": "عملة قبض"
+    },
+    "Key": "RECEIPTCURRENCY"
+  },
+  {
+    "Values": {
+      "en": "Fast Remit Send Settings",
+      "ar": "اعدادات الاصدار للحوالة السريعة"
+    },
+    "Key": "FastremitSendSett"
+  },
+  {
+    "Values": {
+      "en": "Remit currency",
+      "ar": "عملة الحوالة"
+    },
+    "Key": "REMITCURR"
+  },
+  {
+    "Values": {
+      "en": "",
+      "ar": "سعر الصرف/المحلي"
+    },
+    "Key": "RATELOCAL"
+  },
+  {
+    "Values": {
+      "en": "",
+      "ar": "نوع الحوالة"
+    },
+    "Key": "REMTYPE"
+  },
+  {
+    "Values": {
+      "en": "Settlement currency",
+      "ar": "عملة التسوية"
+    },
+    "Key": "REMITSETT"
+  },
+  {
+    "Values": {
+      "en": "Rate Settlement",
+      "ar": "سعر صرف التسوية"
+    },
+    "Key": "RATESETT"
+  },
+  {
+    "Values": {
+      "en": "",
+      "ar": "طريقة التحويل"
+    },
+    "Key": "CONVERSIONMETHOD"
+  },
+  {
+    "Values": {
+      "en": "COMMAMT",
+      "ar": "قيمة العمولة المقطوعة"
+    },
+    "Key": "COMMAMT"
+  },
+  {
+    "Values": {
+      "en": "Not Modification Exchange Rate",
+      "ar": "عدم تعديل سعر الصرف"
+    },
+    "Key": "NOTMODIFICATIONEXCHANGERATE"
+  },
+  {
+    "Values": {
+      "en": "Fast Remit Payment settings",
+      "ar": "اعدادات الدفع للحوالة السريعة"
+    },
+    "Key": "FastremitPaySett"
+  },
+  {
+    "Values": {
+      "en": "Full Name (Ar)",
+      "ar": "الاسم الرباعي (عربي)"
+    },
+    "Key": "UserFullNameAr"
+  },
+  {
+    "Values": {
+      "en": "PhoneNumber",
+      "ar": "رقم الهاتف"
+    },
+    "Key": "PhoneNumber"
+  },
+  {
+    "Values": {
+      "en": "NationalityId",
+      "ar": "الرقم الوطني"
+    },
+    "Key": "NationalityId"
+  },
+  {
+    "Values": {
+      "en": "CustomerNumber",
+      "ar": "رقم العميل"
+    },
+    "Key": "CustomerNumber"
+  },
+  {
+    "Values": {
+      "en": "Number of daily Outward Remits",
+      "ar": "عدد الحوالات الصادرة اليومي"
+    },
+    "Key": "NumberRemit"
+  },
+  {
+    "Values": {
+      "en": "Description(Ar)",
+      "ar": "الوصف بالعربية"
+    },
+    "Key": "DESCAR"
+  },
+  {
+    "Values": {
+      "en": "Description(Eng)",
+      "ar": "الوصف بالانجليزية"
+    },
+    "Key": "DESCEN"
+  },
+  {
+    "Values": {
+      "en": "Is Mandatory",
+      "ar": "الالزامية"
+    },
+    "Key": "ISMANDATORY"
+  },
+  {
+    "Values": {
+      "en": "Description(Ar)",
+      "ar": "الوصف بالعربية"
+    },
+    "Key": "DescAr"
+  },
+  {
+    "Values": {
+      "en": "Description(Eng)",
+      "ar": "الوصف بالانجليزية"
+    },
+    "Key": "DescEn"
+  },
+  {
+    "Values": {
+      "en": "Is Mandatory",
+      "ar": "الالزامية"
+    },
+    "Key": "IsMandatory"
+  },
+  {
+    "Values": {
+      "en": "Nationality",
+      "ar": "الجنسية"
+    },
+    "Key": "IsLocalNationality"
+  },
+  {
+    "Values": {
+      "en": "Identity Type",
+      "ar": "نوع العميل"
+    },
+    "Key": "IdentityType"
+  },
+  {
+    "Values": {
+      "en": "Bank Code",
+      "ar": "Bank Code"
+    },
+    "Key": "BANKCODE"
+  },
+  {
+    "Values": {
+      "en": "Sub classification",
+      "ar": "التصنيف الفرعي"
+    },
+    "Key": "StdCode"
+  },
+  {
+    "Values": {
+      "en": "Main classification",
+      "ar": "التصنيف الرئيسي"
+    },
+    "Key": "StdMainCode"
+  },
+  {
+    "Values": {
+      "en": "Resons OF Transfer",
+      "ar": "رموز اسباب التحويل"
+    },
+    "Key": "ReasonDoc"
+  },
+  {
+    "Values": {
+      "en": "Code",
+      "ar": "الرمز"
+    },
+    "Key": "DESCAR"
+  },
+  {
+    "Values": {
+      "en": "BankCode",
+      "ar": "الرمز"
+    },
+    "Key": "BankCode"
+  },
+  {
+    "Values": {
+      "en": "Name(Ar)",
+      "ar": "الاسم(عربي)"
+    },
+    "Key": "OCDESCAR"
+  },
+  {
+    "Values": {
+      "en": "Name(Eng)",
+      "ar": "الاسم(Eng)"
+    },
+    "Key": "OCDESCEN"
+  },
+  {
+    "Values": {
+      "en": "Code",
+      "ar": "الرمز"
+    },
+    "Key": "OCID"
+  },
+  {
+    "Values": {
+      "en": "Name(Eng)",
+      "ar": "الاسم(Eng)"
+    },
+    "Key": "OcDescEn"
+  },
+  {
+    "Values": {
+      "en": "Name(Ar)",
+      "ar": "الاسم(عربي)"
+    },
+    "Key": "OcDescAr"
+  },
+  {
+    "Values": {
+      "en": "Marital Status",
+      "ar": "الحالة الاجتماعية"
+    },
+    "Key": "SystemMaritalStatus"
+  },
+
+  {
+    "Values": {
+      "en": "Number",
+      "ar": "الرقم"
+    },
+    "Key": "Sid"
+  },
+  {
+    "Values": {
+      "en": "Name(Ar)",
+      "ar": "الاسم(عربي)"
+    },
+    "Key": "SdescAr"
+  },
+  {
+    "Values": {
+      "en": "Name(Eng)",
+      "ar": "الاسم(Eng)"
+    },
+    "Key": "SdescEn"
+  },
+  {
+    "Values": {
+      "en": "Imported Meal",
+      "ar": "الوجبات المستوردة"
+    },
+    "Key": "Imported Meal"
+  },
+  {
+    "Values": {
+      "en": "Imported",
+      "ar": "المستوردة"
+    },
+    "Key": "Imported"
+  },
+  {
+    "Values": {
+      "en": "Livestock",
+      "ar": "الماشية"
+    },
+    "Key": "livestock"
+  },
+  {
+    "Values": {
+      "en": "Livestock Type",
+      "ar": "نوع الماشية"
+    },
+    "Key": "livestock Type"
+  },
+  {
+    "Values": {
+      "en": "Meal Name:",
+      "ar": "اسم الوجبة"
+    },
+    "Key": "Meal Name"
+  },
+  {
+    "Values": {
+      "en": "Origin Country:",
+      "ar": "بلد الاصل"
+    },
+    "Key": "Origin Country"
+  },
+  {
+    "Values": {
+      "en": "Gross Weight",
+      "ar": "الوزن قائم"
+    },
+    "Key": "Gross weight"
+  },
+  {
+    "Values": {
+      "en": "Net weight",
+      "ar": "الوزن الصافي"
+    },
+    "Key": "Net weight"
+  },
+  {
+    "Values": {
+      "en": "Count",
+      "ar": "العدد"
+    },
+    "Key": "Count"
+  },
+  {
+    "Values": {
+      "en": "Livestock type",
+      "ar": "نوع المواشي"
+    },
+    "Key": "Livestock type"
+  },
+  {
+    "Values": {
+      "en": "Shipping date",
+      "ar": "تاريخ الشحن"
+    },
+    "Key": "Shipping date"
+  },
+  {
+    "Values": {
+      "en": "Shipment arrival date",
+      "ar": "تاريخ وصول الشحنة"
+    },
+    "Key": "Shipment arrival date"
+  },
+  {
+    "Values": {
+      "en": "Add Meal",
+      "ar": "اضف وجبة"
+    },
+    "Key": "Add Meal"
+  },
+  {
+    "Values": {
+      "en": "status",
+      "ar": "الحالة"
+    },
+    "Key": "status"
+  },
+  {
+    "Values": {
+      "en": "Select a Livestock type",
+      "ar": "قم باختيار نوع الماشية"
+    },
+    "Key": "Select a Livestock type"
+  },
+  {
+    "Values": {
+      "en": "Add New Meal",
+      "ar": "اضف وجبة استيراد جديدة"
+    },
+    "Key": "Add New Meal"
+  },
+  {
+    "Values": {
+      "en": "Add Lifestock",
+      "ar": "اضف ماشية"
+    },
+    "Key": "Add Lifestock"
+  },
+  {
+    "Values": {
+      "en": "Livesctock Type",
+      "ar": "نوع الماشية"
+    },
+    "Key": "Livesctock Type"
+  },
+  {
+    "Values": {
+      "en": "Home Page",
+      "ar": "الصفحة الرئيسية"
+    },
+    "Key": "Home Page"
+  },
+  {
+    "Values": {
+      "en": "Name Arabic",
+      "ar": "الاسم باللغة العربية"
+    },
+    "Key": "Name Arabic"
+  },
+  {
+    "Values": {
+      "en": "Back To List",
+      "ar": "العودة للقائمة"
+    },
+    "Key": "Back To List"
+  },
+  {
+    "Values": {
+      "en": "Add Country",
+      "ar": "اضف دولة"
+    },
+    "Key": "Add Country"
+  },
+  {
+    "Values": {
+      "en": "Countries",
+      "ar": "الدول"
+    },
+    "Key": "Countries"
+  },
+  {
+    "Values": {
+      "en": "Last Login Date",
+      "ar": "تاريخ آخر تسجيل دخول"
+    },
+    "Key": "Last Login Date"
+  },
+  {
+    "Values": {
+      "en": "Last Change Password",
+      "ar": "تاريخ آخر تغير لرمز الدخول"
+    },
+    "Key": "Last Change Password"
+  },
+  {
+    "Values": {
+      "en": "Is Active",
+      "ar": "النشاط"
+    },
+    "Key": "Is Active"
+  },
+  {
+    "Values": {
+      "en": "Users Data",
+      "ar": "معلومات المستخدمين"
+    },
+    "Key": "Users Data"
+  },
+  {
+    "Values": {
+      "en": "Add User",
+      "ar": "اضف مستخدم"
+    },
+    "Key": "Add User"
+  },
+  {
+    "Values": {
+      "en": "Not Active",
+      "ar": "غير فعال"
+    },
+    "Key": "Not Active"
+  },
+  {
+    "Values": {
+      "en": "Page",
+      "ar": "الصفحة"
+    },
+    "Key": "Page"
+  },
+  {
+    "Values": {
+      "en": "Add Livestock Type",
+      "ar": "اضافة نوع الماشية"
+    },
+    "Key": "Add Livestock Type"
+  },
+  {
+    "Values": {
+      "en": "Select a Country",
+      "ar": "اختر الدولة"
+    },
+    "Key": "Select a Country"
+  }
+
+]
+

@@ -1,0 +1,114 @@
+﻿@model List<livestockProject.Data.LivestockType>
+    
+@{
+    ViewData["Title"] = @LocalizationManager.GetString("Livesstock Type");
+}
+
+    
+
+                <section class="section main-section">
+                    <div class="card has-table">
+
+                        <header class="card-header">
+                            <p class="card-header-title">
+
+                            @LocalizationManager.GetString("Livestock")
+                            </p>
+                            <a class="green-btn" asp-area="" asp-controller="LivestockType" asp-action="AddLifestockType">
+                            @LocalizationManager.GetString("Add Livestock Type") 
+                            </a>
+                        </header>
+                        <div class="card-content">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                    <th>@LocalizationManager.GetString("ID")</th>
+                                    <th>@LocalizationManager.GetString("NameArabic")</th>
+                                    <th>@LocalizationManager.GetString("Action")</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var type in Model)
+                                    {
+                                        <tr>
+                                            <td>@type.Id</td>
+                                            <td>@type.NameArabic</td>
+                                            <td>
+                                                <a id="delete" class="button small red --jb-modal" data-id="@type.Id">
+                                                    <span class="icon"><i class="mdi mdi-trash-can"></i></span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <div class="table-pagination">
+                                <div class="flex items-center justify-between">
+                                    <div class="buttons">
+                                        <button type="button" class="button active">1</button>
+                                        <button type="button" class="button">2</button>
+                                        <button type="button" class="button">3</button>
+                                    </div>
+                                    <small>Page 1 of 3</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Add a click event handler to the delete icons
+        $("#delete").click(function () {
+            var id = $(this).data("id");
+            var button = $(this); // Capture the button element
+
+            $.ajax({
+                type: "POST",
+                url: "/LivestockType/DeleteLifestockType",
+                data: { Id: id },
+                success: function (result) {
+                    if (result.status === "success") {
+                        window.location.href = "@Url.Action("Index", "LivestockType")";
+                        button.closest("tr").remove(); // Use the captured button variable
+                    } else {
+                        alert("Error: " + result.message);
+                    }
+                },
+                error: function () {
+                    alert("An error occurred while processing your request.");
+                }
+            });
+        });
+    });
+</script>
+
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '658339141622648');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img b-4ina8mlikz height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=658339141622648&ev=PageView&noscript=1" /></noscript>
+
+    <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
+   
+
+
+    <!-- Visual Studio Browser Link -->
+    <script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="ef9b64c3753242cf9ad90658ff7b7ce7" data-requestMappingFromServer="false" data-connectUrl="http://localhost:63875/f503be01b10641b3ab5cd8d6d408a761/browserLink"></script>
+    <!-- End Browser Link -->
+
+    <script src="/_framework/aspnetcore-browser-refresh.js"></script>
+
+

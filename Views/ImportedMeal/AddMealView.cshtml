@@ -1,0 +1,155 @@
+﻿@model livestockProject.Data.ImportedMeal
+@{
+    ViewData["Title"] = @LocalizationManager.GetString("Add Meal Page");
+}
+
+<section class="section main-section">
+    <div class="card has-table">
+
+        <header class="card-header">
+            <p class="card-header-title">
+                <span class="icon"></span>
+                @LocalizationManager.GetString("Add New Meal")
+            </p>
+            <a href="#" class="card-header-icon" onclick="reloadPage()">
+                <span class="icon"><i class="mdi mdi-reload"></i></span>
+            </a>
+        </header>
+        <div class="container">
+            <form id="addMealForm">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="mealName">@LocalizationManager.GetString("Meal Name")</label>
+                            <input type="text" class="form-control" name="mealName" id="MealName" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="Origincountry">@LocalizationManager.GetString("Origin Country")</label>
+                            @Html.DropDownListFor(model => model.Id, (SelectList)ViewBag.countries,@LocalizationManager.GetString("Select a Country") , new { @class = "form-control",id ="Origincountry"})
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="grossWeight">@LocalizationManager.GetString("Gross weight")Kg </label>
+                            <input type="number" class="form-control" name="grossWeight" id="Grossweight" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="Netweight">@LocalizationManager.GetString("Net weight")Kg </label>
+                            <input type="number" class="form-control" name="Netweight" id="Netweight" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="originCountry">@LocalizationManager.GetString("Count")</label>
+                            <input type="number" class="form-control" name="Count" id="Count" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="Livestocktype">@LocalizationManager.GetString("Livestock type")</label>
+                            @Html.DropDownListFor(model => model.Id, (SelectList)ViewBag.LivestockType,@LocalizationManager.GetString("Select a Livestock type") , new { @class = "form-control", id="Livestocktype" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="Shippingdate">@LocalizationManager.GetString("Shipping date")</label>
+                            <input type="date" class="form-control" name="Shippingdate" id="Shippingdate" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="Shipmentarrivaldate">@LocalizationManager.GetString("Shipment arrival date")</label>
+                            <input type="date" class="form-control" name="Shipmentarrivaldate" id="Shipmentarrivaldate" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="Status">@LocalizationManager.GetString("Status")</label>
+                            <select class="form-control" name="Status" id="Status" required>
+                                <option value="1">@LocalizationManager.GetString("Good")</option>
+                                <option value="2">@LocalizationManager.GetString("pad")</option>
+                                <option value="2">@LocalizationManager.GetString("normal")</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success">@LocalizationManager.GetString("Add Meal")</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <a asp-area="" class="btn btn-primary" asp-controller="ImportedMeal" asp-action="Index">
+                                <span class="menu-item-label">@LocalizationManager.GetString("Back To List")</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function reloadPage() {
+        window.location.reload(); // Reload the page
+    }
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('#addMealForm').on('submit', function (e) {
+            e.preventDefault();
+
+            var formData = {
+                MealName: $("#MealName").val(),
+                Origincountry: $("#Origincountry option:selected").text(),
+                Grossweight: $("#Grossweight").val(),
+                Netweight: $("#Netweight").val(),
+                Count: $("#Count").val(),
+                Livestocktype: $("#Livestocktype option:selected").text(),
+                Shippingdate: $("#Shippingdate").val(),
+                Shipmentarrivaldate: $("#Shipmentarrivaldate").val(),
+                Status: $("#Status option:selected").text()
+            };
+
+            console.log("FormData: ", formData);
+
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("AddMeal", "ImportedMeal")",
+                data: formData,
+                success: function (response) {
+                    if (response.status === "success") {
+                        alert(response.message);
+                        $('#addMealForm')[0].reset();
+                        window.location.href = "@Url.Action("Index", "ImportedMeal")"; // Redirect to the index action
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function () {
+                    alert("An error occurred while adding the meal. Please try again.");
+                }
+            });
+        });
+    });
+</script>
+
+
+

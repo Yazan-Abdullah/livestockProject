@@ -1,25 +1,182 @@
 ﻿@model livestockProject.Models.SystemUser
 
 @{
-    ViewData["Title"] = "Login Page";
+    ViewData["Title"] = @LocalizationManager.GetString("Login Page");
+    Layout = null;
 }
-<div id="errorMessage"></div>
-<div class="login-container" style="width: 300px; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0px 0px 10px 0px #000;">
-    <h2 style="text-align: center;">Login</h2>
-    <form id="loginForm" asp-action="Login" method="post">
-        <div class="input-group" style="margin: 10px 0;">
-            <label for="Username" style="display: block;">Username</label>
-            <input type="text" id="Username" name="Username" style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px;" required>
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <title>Login | @LocalizationManager.GetString("Lifestock")</title>
+    <link rel="stylesheet" href="~/dist/css/main.css?v=1628755089081">
+    <link href="~/Content/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/Content/assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/boostrapv3/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/custom-icon-set.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/css/gotham-rounded.min.css" rel="stylesheet">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-130795909-1');
+    </script>
+   <style>
+        html {
+            color: #eee;
+        }
+
+        * {
+            font-family: "Gotham Rounded Book", "sans-serif";
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 560px;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+            background: #eee;
+        }
+
+        section {
+            min-width: 450px;
+            min-height: 520px;
+            padding: 15px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            border-radius: 10px;
+            background: #2c2d31;
+        }
+
+        #logo {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin: 30px;
+        }
+
+        nav {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+            nav label {
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+
+                nav label:first-child {
+                    margin-right: 20px;
+                }
+
+        .cutomForm {
+            padding-inline: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        button {
+            border-radius: 50px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        button {
+            background: #1ed760;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .cutomForm span {
+            margin-left: 20px;
+        }
+
+            .cutomForm span label {
+                font-size: 14px;
+                text-transform: lowercase;
+            }
+
+        input[type="checkbox"] {
+            cursor: pointer;
+            accent-color: #3498db;
+        }
+
+        a {
+            color: #797a7e;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+             @*Loader*@
+             .loader {
+                 display: none;
+                 position: fixed;
+                 z-index: 1000;
+                 top: 0;
+                 left: 0;
+                 height: 100%;
+                 width: 100%;
+                 /*background: rgba( 255, 255, 255, .8 ) url('https://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;*/
+                 background: rgba( 255, 255, 255, .8 ) url('@Url.Content("~/Content/assets/img/loader/loaderSys.gif")') 50% 50% no-repeat;
+             }
+             body.loading .loader {
+                 overflow: hidden;
+             }
+             body.loading .loader {
+                 display: block;
+             }
+             @*Loader*@
+
+    </style>
+</head>
+<body>
+ @*Loader*@
+  <div class="loader"></div>
+ @*Loader*@
+     <script src="~/Content/assets/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+ <section>
+        <div id="logo">
+            <h2 style="color:white">@LocalizationManager.GetString("Login")</h2>
         </div>
-        <div class="input-group" style="margin: 10px 0;">
-            <label for="password" style="display: block;">Password</label>
-            <input type="password" id="password" name="password" style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px;" required>
-        </div>
-        <div class="input-group" style="margin: 10px 0;">
-            <button type="submit" style="width: 100%; padding: 10px; background-color: #007BFF; color: #fff; border: none; border-radius: 3px; cursor: pointer;">Login</button>
-        </div>
-    </form>
-</div>
+        <div id="errorMessage"></div>
+         
+            <div class="cutomForm">
+             <label for="Username" style="display: block;">@LocalizationManager.GetString("Username")</label>
+             <input type="text" id="Username" name="Username" autofocus required>
+             <span id="RequerdIdTextEmailOrUserName" style="display:none; color: red;">@LocalizationManager.GetString("ThisFieldIsRequired")</span>
+             <span style="padding-top:10px"></span>
+             <label for="password" style="display: block;">@LocalizationManager.GetString("Password")</label>           
+             <input type="password" id="password" name="password"  required>
+             <span style="padding-top:10px"></span>
+             <span id="RequerdIdTextServerSide" style="display: none; color: red">@LocalizationManager.GetString("PleaseVerifyTheInformationEntered")</span>
+             <button type="submit" id="loginButton" "> @LocalizationManager.GetString("Login")</button>
+            </div>
+         
+         
+
+            
+ </section>
+
 @if (TempData["ErrorMessage"] != null)
 {
     <div class="alert alert-danger">
@@ -29,9 +186,10 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+   
     $(document).ready(function () {
-        $("#loginForm").submit(function (event) {
-            event.preventDefault();
+        $("#loginButton").click(function (event) {
+            event.preventDefault(); // Prevent the default form submission
 
             var formData = {
                 Username: $("#Username").val(),
@@ -57,5 +215,8 @@
             });
         });
     });
+
 </script>
 
+ </body>
+</html>

@@ -1,0 +1,130 @@
+﻿@model livestockProject.Models.Importedmeal
+
+@{
+    ViewData["Title"] = "Edit Meal Page";
+}
+
+<section class="section main-section">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">Edit Meal</p>
+        </header>
+        <div class="card-content">
+                        <form id="addMealForm" asp-controller="ImportedMeal" asp-action="Edit" asp-route-id="@Model.Id" method="post">                     
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="mealName">Meal Name:</label>
+                                            <input type="text" class="form-control" name="mealName" id="MealName" value="@Model.MealName" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Origincountry">Origin Country:</label>
+                                            @Html.DropDownListFor(model => model.Id, (SelectList)ViewBag.SystemCountries, "Select a Country", new { @class = "form-control",id = "Origincountry"})
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="grossWeight">Gross Weight (Kg):</label>
+                                            <input type="number" class="form-control" name="grossWeight" id="Grossweight" value="@Model.Grossweight" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Netweight">Net weight</label>
+                                            <input type="number" class="form-control" name="Netweight" id="Netweight" value="@Model.Netweight" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="originCountry">Count</label>
+                                            <input type="number" class="form-control" name="Count" id="Count" value="@Model.Count" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Livestocktype">Livestock type:</label>
+                                            @Html.DropDownListFor(model => model.Id, (SelectList)ViewBag.SystemLivestockTypes, "Select a Livestock type:", new { @class = "form-control", id="Livestocktype" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Shippingdate">Shipping date</label>
+                                            <input type="date" class="form-control" name="Shippingdate" id="Shippingdate" value="@Model.Shippingdate" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Shipmentarrivaldate">Shipment arrival date</label>
+                                            <input type="date" class="form-control" name="Shipmentarrivaldate" id="Shipmentarrivaldate" value="@Model.Shipmentarrivaldate" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Status">Status :</label>
+                                            <select class="form-control" name="Status" id="Status" required>
+                                                <option value="1">Good</option>
+                                                <option value="2">pad</option>
+                                                <option value="2">normal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Add Meal</button>
+                                </div>
+                            </form>
+            
+                      </div>
+                    </div>
+              </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#addMealForm').on('submit', function (e) {
+            e.preventDefault();
+
+            var formData = {
+                MealName: $("#MealName").val(),
+                Origincountry: $("#Origincountry option:selected").text(),
+                Grossweight: $("#Grossweight").val(),
+                Netweight: $("#Netweight").val(),
+                Count: $("#Count").val(),
+                Livestocktype: $("#Livestocktype option:selected").text(),
+                Shippingdate: $("#Shippingdate").val(),
+                Shipmentarrivaldate: $("#Shipmentarrivaldate").val(),
+                Status: $("#Status option:selected").text()
+            };
+
+            console.log("FormData: ", formData);
+
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("AddMeal", "ImportedMeal")",
+                data: formData,
+                success: function (response) {
+                    if (response.status === "success") {
+                        alert(response.message);
+                        $('#addMealForm')[0].reset();
+                        window.location.href = "@Url.Action("Index", "ImportedMeal")"; // Redirect to the index action
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function () {
+                    alert("An error occurred while adding the meal. Please try again.");
+                }
+            });
+        });
+    });
+</script>
+

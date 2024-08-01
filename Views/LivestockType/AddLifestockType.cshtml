@@ -1,0 +1,88 @@
+﻿@model livestockProject.Models.SystemLivestockType
+
+@{
+    ViewData["Title"] = "Add Lifestock Type";
+}
+
+    <div b-4ina8mlikz class="container">
+        <main b-4ina8mlikz role="main" class="pb-3">
+            <div id="app">
+                <section class="section main-section">
+                    <div class="card has-table">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <span class="icon"></span>
+                                @LocalizationManager.GetString("Livesctock Type") 
+                            </p>
+                            <a href="#" class="card-header-icon" onclick="reloadPage()>
+                                <span class="icon"><i class="mdi mdi-reload"></i></span>
+                            </a>
+                        </header>
+
+                        <div class="container">
+                            <form id="createLifestockForm">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="NameArabic">@LocalizationManager.GetString("Name Arabic")</label>
+                                            <input type="text" class="form-control" name="NameArabic" id="NameArabic" required />
+                                        </div>
+                                    </div> 
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                          <button type="submit" class="btn btn-success">@LocalizationManager.GetString("Add Lifestock")</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <a asp-area="" class="btn btn-primary" asp-controller="LivestockType" asp-action="Index">
+                                                <span class="menu-item-label">@LocalizationManager.GetString("Back To List")</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                function reloadPage() {
+                    window.location.reload(); // Reload the page
+                }
+            </script>
+            <script>
+        $(document).ready(function () {
+            $('#createLifestockForm').on('submit', function (e) {
+                e.preventDefault();
+
+                var NameArabic = $("#NameArabic").val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("CreateLifestockType", "LivestockType")",
+                    data: { NameArabic: NameArabic }, // Send only the NameArabic variable
+                    success: function (response) {
+                        if (response.status === "success") {
+                            window.location.href = "@Url.Action("Index", "LivestockType")"; // Redirect on success
+                        } else {
+                            alert(response.message || "Error creating user. Please try again.");
+                        }
+                    },
+                    error: function () {
+                        alert("An error occurred. Please try again.");
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    
+    </div>
+ </main>
+</div>
